@@ -106,10 +106,7 @@ contains(names, 'Colt', function(result){
 function uniq(arr, callback) {
   var newArr = [];
   for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < arr.length; i++) {
-      if (arr[i] === arr[j] && i !== j) {
-      }
-    }
+    if (newArr.indexOf(arr[i]) === -1) newArr.push(arr[i]);
   }
   callback(newArr);
 }
